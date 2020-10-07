@@ -1,0 +1,6 @@
+{
+    "extensions.showRecommendationsOnlyOnDemand": true,
+    "liveshare.allowGuestDebugControl": true,
+    "liveshare.alwaysFollowHost": true,
+    "liveshare.guestApprovalRequired": true
+}

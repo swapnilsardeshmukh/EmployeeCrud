@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Switch, withRouter } from "react-router-dom";
 import './index.css';
 import App from './App';
+import Edit from './Edit';
+import View from './View';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+      <Route exact path="/" component={App} />
+      <Route path="/edit/:email" component={Edit} render={(props) => <Edit {...props} />}/>
+      <Route path="/view/:_id" component={View} render={(props) => <View {...props} />}/>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

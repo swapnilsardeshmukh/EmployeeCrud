@@ -1,14 +1,29 @@
-const mongoose = require('mongoose');
-const express = require('express');
-const bodyParser = require('body-parser');
-const path = require('path');
-const cors = require('cors');
+const   mongoose = require('mongoose'),
+        express = require('express'),
+        bodyParser = require('body-parser'),
+        path = require('path'),
+        cors = require('cors'),
+        session = require('express-session'),
+        cookieParser= require('cookie-parser'),
+        flash = require('connect-flash');
 
+
+        // Define Global Variables
+const app = express();
+
+        // set sessions and cookie parser
+app.use(cookieParser());
+app.use(session({
+  secret: "Secret is Not Always a Secret", 
+  cookie: { maxAge: 60000 },
+  resave: false,    // forces the session to be saved back to the store
+  saveUninitialized: false  // dont save unmodified
+}));
+app.use(flash());
 // importing files
 const routes = require('./routes/api');
 
-// Define Global Variables
-const app = express();
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

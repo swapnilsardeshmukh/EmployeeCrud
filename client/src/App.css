@@ -1,4 +1,27 @@
-form{
-border-radius: 2px;
+
+
+#first {
+    width: 18%;
+    float: left;
+    background-color: rgb(217, 233, 74);
+    margin: 5px;
+}
+#second{
+    width: 75%;
+    float: left;
+    margin: 2px;
+    font-size: 0.8rem;
+}
+
+Footer{
+    width: 100%;
+    overflow: hidden;
+}
+table th {
+    width: auto;
+}
+
+.ddata{
+    text-align: center;
 }
 

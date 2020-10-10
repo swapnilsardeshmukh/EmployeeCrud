@@ -4,9 +4,9 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      <h1>
+      <h6>
       © 2020 Swapnil Sardeshmukh.
-      </h1>
+      </h6>
     </footer>
   );
 }

@@ -8,7 +8,9 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-flash-message": "^1.0.4",
+    "react-scripts": "3.4.3",
+    "reactstrap": "^8.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,5 +33,4 @@
       "last 1 safari version"
     ]
   }
-
 }
